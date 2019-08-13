@@ -22,6 +22,10 @@ python finder.py {messages.json} {user} {message}
 `{user}` == the person you sent the direct message to <br />
 `{message}` == the message you are looking for 
 
+# example
+
+    python finder.py messages.json blink_182_intern this is a message
+
 
 
 

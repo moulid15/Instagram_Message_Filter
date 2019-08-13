@@ -1,6 +1,6 @@
 # Instagram_Message_Filter
 
-# clone
+# Clone
 
 ```
 git clone https://github.com/moulid15/Instagram_Message_Filter.git
@@ -14,7 +14,7 @@ git clone https://github.com/moulid15/Instagram_Message_Filter.git
 
 3. Put `messages.json` in the side Instagram_Message_Filter folder. <br />
 
-# running
+# Running
 #### in the terminal
 ```
 python finder.py {messages.json} {user} {message}
@@ -22,7 +22,7 @@ python finder.py {messages.json} {user} {message}
 `{user}` == the person you sent the direct message to <br />
 `{message}` == the message you are looking for 
 
-# example
+# Example
 
     python finder.py messages.json blink_182_intern this is a message
 

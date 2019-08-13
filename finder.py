@@ -4,13 +4,14 @@ import sys
 if len(sys.argv) < 4:
     print('python filename.py {messages.json file} {user} {message}')
 
-filename = sys.argv[0]
+filename = sys.argv[1]
 
-with open('messages.json', 'r') as jsonFile:
+with open(filename, 'r') as jsonFile:
     d = jsonFile.read()
 
 d2 =json.loads(d)
-
+truth = False
+print('\n---------------------------messages-------------------------')
 for i in d2:
     list = i['conversation']
     message = ' '.join(word for word in sys.argv[3:])
@@ -19,9 +20,14 @@ for i in d2:
             send = j['sender']
             for values in j.values():
                 if str(values).lower().find(message.lower()) != -1:
-                    print(f'{send}: {values}')
+                    truth = True
+                    print(f'\n-----------------[ {send} sent ]-------------------\n\n{send}: {values} ')
+if not truth:
+    print(f'This message does not exist with {sys.argv[2]}......try agian')
 
-#if you want to make the json file neat uncomment the below code.
+print('\n----------------messages ends--------------------------------')
+
+# if you want to make the json file neat uncomment the below code.
 
 # with open('messages2.json', 'w') as f:
 #     print('Working......')

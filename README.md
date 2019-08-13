@@ -16,7 +16,7 @@ git clone https://github.com/moulid15/Instagram_Message_Filter.git
 3. Put `messages.json` in the side Instagram_Message_Filter folder. <br />
 
 # Running
-#### in the terminal
+#### In the terminal
 ```
 python finder.py {messages.json} {user} {message}
 ```

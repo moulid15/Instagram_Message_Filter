@@ -1,5 +1,5 @@
 # Instagram_Message_Filter
-This script will filter every instagram message containing the message string you give it. 
+This script will filter every instagram message of a user you choose containing the message string you give it. 
 
 # Clone
 

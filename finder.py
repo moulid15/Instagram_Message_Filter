@@ -2,7 +2,7 @@ import json
 import sys
 
 if len(sys.argv) < 4:
-    print(f'python filename.py {messages.json file} {user} {message}')
+    print('python filename.py {messages.json file} {user} {message}')
 
 filename = sys.argv[1]
 
